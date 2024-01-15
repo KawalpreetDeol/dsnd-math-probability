@@ -47,7 +47,8 @@ class Gaussian(Distribution):
 			float: standard deviation of the data set
 	
 		"""	
-		self.stdev = self.stdev = ((sum(((el-self.mean)**2) for el in self.data)) / (len(self.data)-(1 if sample else 0))) ** (1/2)
+		self.calculate_mean()
+		self.stdev = math.sqrt(sum((abs(el-self.mean)**2) for el in self.data) / (len(self.data)-(1 if sample else 0)))
 		
 		return self.stdev
 		

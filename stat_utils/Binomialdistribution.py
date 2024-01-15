@@ -16,6 +16,8 @@ class Binomial(Distribution):
     def __init__(self, p=0.5, n=25):
         self.p = p
         self.n = n
+        self.calculate_mean()
+        self.calculate_stdev()
         Distribution.__init__(self, self.mean, self.stdev)  
 
     def calculate_mean(self):    

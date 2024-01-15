@@ -1,4 +1,4 @@
-# Stats Util
+# Stat Utils
 This package contains modules implementing the Guassian and Binomial distributions.
 
 # Files
@@ -10,7 +10,15 @@ This package contains modules implementing the Guassian and Binomial distributio
 
 # Installation
 ```python
-pip install stats-util
+pip install stat-utils
+```
+
+# Testing
+Make sure all test files follow the naming convention: `test*.py`
+
+```python
+python -m unittest discover -s tests
 ```
 
 # Source Code
+https://github.com/KawalpreetDeol/stat-utils
