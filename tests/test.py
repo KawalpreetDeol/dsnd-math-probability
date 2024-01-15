@@ -6,8 +6,8 @@
 
 import unittest
 
-from stat_utils import Gaussian
-from stat_utils import Binomial
+from stats_utils import Gaussian
+from stats_utils import Binomial
 
 class TestGaussianClass(unittest.TestCase):
     def setUp(self):
